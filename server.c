@@ -22,8 +22,16 @@ static void fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
   
     if (ev == MG_EV_HTTP_MSG) 
     {
+        
         struct mg_http_message *hm = (struct mg_http_message *)ev_data;
-        if (mg_http_match_uri(hm, "/4"))
+        if (mg_http_match_uri(hm, "/"))
+        {
+            aux = rand() % 4;
+            mg_http_reply(c, 200, "Content-Type: application/json\r\n", "{\"result\": \"Escolha um dado: /4 /6 /10 /20\"}");
+            log_message("LOG.log", hm->method.ptr,200);
+        }
+        
+        else if (mg_http_match_uri(hm, "/4"))
         {
             aux = rand() % 4;
             mg_http_reply(c, 200, "Content-Type: application/json\r\n", "{\"result\": %d}", aux);
@@ -48,9 +56,10 @@ static void fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
             log_message("LOG.log", hm->method.ptr,200);
         }
         else 
-            mg_http_reply(c, 404, "Content-Type: application/json\r\n", "{\"result\": dice_not_found}", aux);
-            log_message("LOG.log", hm->method.ptr,404);
-    }
+        {   mg_http_reply(c, 404, "Content-Type: application/json\r\n", "{\"result\": dice_not_found}", aux);
+            log_message("LOG.log", hm->method.ptr ,404);
+        }    
+        }   
 }
 
 int main(int argc, char *argv[]) {
