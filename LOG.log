@@ -1,0 +1,6 @@
+Status: 404
+Ultima requisição: Wed Feb 23 16:20:44 2022
+GET /21321321321 HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
