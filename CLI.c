@@ -35,9 +35,9 @@ int main()
     printf("|----------------------------------------------|\n");
     printf("|Total Requests|  HTTP Method  |      Path     |\n");
     printf("|--------------|---------------|---------------|\n");
-    printf("|      %d       |      GET      |      /4       |\n", request_4);
-    printf("|      %d       |      GET      |      /8       |\n", request_8);
-    printf("|      %d       |      GET      |      /10      |\n", request_10);
-    printf("|      %d       |      GET      |      /20      |\n", request_20);
+    printf("|      %03d     |      GET      |      /4       |\n", request_4);
+    printf("|      %03d     |      GET      |      /8       |\n", request_8);
+    printf("|      %03d     |      GET      |      /10      |\n", request_10);
+    printf("|      %03d     |      GET      |      /20      |\n", request_20);
     printf("|--------------|---------------|---------------|\n");
 }
