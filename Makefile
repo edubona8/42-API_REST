@@ -13,7 +13,7 @@ OBJS = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	gcc $(OBJS) -o $(NAME)
+	gcc $(OBJS) -lcurl -o $(NAME)
 	@echo "$(NAME): $(GREEN)$(NAME) was created$(RESET)"
 
 %.o: %.c

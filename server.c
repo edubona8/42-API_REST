@@ -33,7 +33,7 @@ static size_t    write_memory_call_back(void *contents, size_t size, size_t nmem
     return (realsize);
 }
 
-char    *ft_curl(void)
+char    *get_api(char *coin)
 {
     CURL            *curl;
     CURLcode        res;
@@ -47,7 +47,10 @@ char    *ft_curl(void)
         fprintf(stderr, "[-] Failed Initializing Curl\n");
         exit(-1);
     }
-    curl_easy_setopt(curl, CURLOPT_URL, "https://www.mercadobitcoin.net/api/BTC/ticker/");
+    char url[100] = "https://www.mercadobitcoin.net/api/";
+    strcat(url, coin);
+    strcat(url, "/ticker");
+    curl_easy_setopt(curl, CURLOPT_URL, url);
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_memory_call_back);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);
     res = curl_easy_perform(curl);
@@ -82,16 +85,18 @@ static void fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
 {  
     int aux;
     struct mg_http_message *hm;
-
+    char    *result_api;
+    char    *coin;
+    
+    coin = "ETH";
   
     if (ev == MG_EV_HTTP_MSG) 
     {
-        
         hm = (struct mg_http_message *)ev_data;
         if (mg_http_match_uri(hm, "/"))
         {
-            get_api();
-            mg_http_reply(c, 200, "Content-Type: application/json\r\n", "{\"result\": %s}", aux);
+            result_api = get_api(coin);
+            mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", result_api);
             log_message("LOG.log", hm->method.ptr,200);
         }
         
