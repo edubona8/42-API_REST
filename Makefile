@@ -1,33 +1,59 @@
-GREEN = \033[0;32m
-RED = \033[0;31m
-RESET = \033[0m
-
-.DEFAULT_GOAL    :=    all
-
+GREEN        =    \033[0;32m
+RED            =    \033[0;31m
+RESET        =    \033[0m
+LIB = -lcurl
+CC            =    gcc
 NAME = API
+DIR				:=	./SERVER/
 
-SRC = mongoose.c server.c
+SRC := $(addprefix $(DIR),\
+get_body.c \
+log_server.c \
+server.c \
+)
+MONGOOSE    =    LIBS/mongoose.a
+##GNL         =    get_next_line/get_next_line.a
 
-OBJS = $(SRC:.c=.o)
+OBJS			:=	${SRC:%.c=%.o}
 
-all: $(NAME)
+.c.o:
+				$(CC) -c $< -o $(<:.c=.o)
 
-$(NAME): $(OBJS)
-	gcc $(OBJS) -lcurl -o $(NAME)
-	@echo "$(NAME): $(GREEN)$(NAME) was created$(RESET)"
+all:            $(MONGOOSE) $(NAME) ##$(GNL)
+				@echo "$(GREEN)"
+				@echo "██╗ ██╗ ██████╗ ██╗         ██╗     ███████╗ "
+				@echo "██║ ██║     ██║ ██║        ████╗    ██    ██╗"
+				@echo "██████║ ██████║ ██║      ██    ██╗  ██████╔═╝"
+				@echo "    ██║ ██╔═══╝ ██║      ████████║  ██    ██╗"
+				@echo "    ██║ ██████╗ ███████╗ ██║   ██║  ███████╔╝"
+				@echo "    ╚═╝ ╚═════╝ ╚══════╝ ╚═╝   ╚═╝  ╚══════╝ "
+				@echo "           Everything is Done!$(RESET)"
 
-%.o: %.c
-	gcc $(CFLAG) -c $< -o $@
-	@echo "\n$(NAME): $(GREEN)object files were created$(RESET)"
+
+##$(GNL):
+               ## make -C ./get_next_line/
+               ## @echo "\n $(GREEN)$(MONGOOSE) was created $(RESET)\n"
+$(MONGOOSE):
+				make -C ./LIBS/
+				@echo "\n $(GREEN) $(MONGOOSE) was created $(RESET)\n"
+
+$(NAME):    $(MONGOOSE) $(OBJS)
+				$(CC) $(MONGOOSE)  $(OBJS) $(LIB) -o $(NAME) 					
+				
 
 clean:
-	rm -f $(OBJS)
-	@echo "$(NAME): $(RED)object files were deleted$(RESET)"
+			@echo "\n $(RED) Removing *.o files $(RESET)\n"
+			rm -f $(OBJS) $(OBJS_BONUS)
+			make clean -C ./LIBS
 
-fclean: clean
-	rm -f $(NAME)
-	@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
+fclean:            clean
+			@echo "\n $(RED) Removing files *.o and *.a files $(RESET)\n"
+			rm -f $(NAME) $(NAME_BONUS)
+			make fclean -C ./LIBS
 
-re: fclean all
 
-.PHONY: clean fclean re all
+runserver: $(SERVER) $(mongoose)
+
+re:			fclean all
+
+.PHONY:         all, clean, fclean, re

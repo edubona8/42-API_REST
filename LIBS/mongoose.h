@@ -127,6 +127,7 @@ extern "C" {
 
 #if MG_ARCH == MG_ARCH_ESP8266
 
+#include <curl/curl.h>
 #include <ctype.h>
 #include <dirent.h>
 #include <errno.h>

@@ -1516,3 +1516,115 @@ Host: localhost:8000
 User-Agent: insomnia/2021.7.2
 Accept: */*
 
+Status: 200
+Ultima requisição: Thu Feb 24 15:48:36 2022
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 15:48:54 2022
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 404
+Ultima requisição: Thu Feb 24 16:16:50 2022
+GET /elder HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 404
+Ultima requisição: Thu Feb 24 16:17:10 2022
+GET /elder HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 16:17:15 2022
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 18:54:33 2022
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 18:54:44 2022
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 18:54:51 2022
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 404
+Ultima requisição: Thu Feb 24 18:57:40 2022
+GET /8 HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 18:57:47 2022
+GET /10 HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 19:11:20 2022
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 19:11:26 2022
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 19:11:31 2022
+GET /10 HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 19:11:34 2022
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 20:19:10 2022
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Thu Feb 24 20:19:15 2022
+GET /10 HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+

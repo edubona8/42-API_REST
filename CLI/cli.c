@@ -14,7 +14,7 @@ int main()
     request_10 = 0;
     request_20 = 0;
 
-    fd = open("LOG.log", O_RDONLY);
+    fd = open("../LOG.log", O_RDONLY);
     if (fd == -1)
 		printf("Error.");
     while (1)
