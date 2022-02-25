@@ -14,7 +14,7 @@ typedef struct s_MemoryStruct
 	size_t	size;
 }	t_MemoryStruct;
 
-char	*get_api(char *game);
+char	*get_api(char *game, int u);
 void	log_message(const char *filename, const char *message, int status);
 
 

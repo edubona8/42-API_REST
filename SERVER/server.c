@@ -17,35 +17,36 @@ static void	fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
 	int	aux;
 	struct mg_http_message	*hm;
 	char					*result_api;
-	char					*game;
+	char					*uri_id;
 
-	game = "noita";
+	//game = "455827";
 	if (ev == MG_EV_HTTP_MSG)
 	{
 		hm = (struct mg_http_message *)ev_data;
 		if (mg_http_match_uri(hm, "/"))
 		{
-			result_api = get_api(game);
-			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", result_api);
+			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "{\"result\": Portal de informações 42Labs Selecione sua notícia}", result_api);
 			log_message ("LOG.log", hm->method.ptr, 200);
 		}
 
-		else if (mg_http_match_uri(hm, "/4"))
+		else if (mg_http_match_uri(hm, "/sp"))
 		{
-			aux = rand() % 4;
-			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "{\"result\": %d}", aux);
-			log_message ("../LOG.log", hm->method.ptr, 200);
+			uri_id = "455827";
+			result_api = get_api(uri_id,1);
+			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s\n", result_api);
+			log_message ("LOG.log", hm->method.ptr, 200);
 		}
-		else if (mg_http_match_uri(hm, "/6"))
+		else if (mg_http_match_uri(hm, "/rj"))
 		{
-			aux = rand() % 6;
-			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "{\"result\": %d}", aux);
-			log_message ("../LOG.log", hm->method.ptr, 200);
+			uri_id = "455825";
+			result_api = get_api(uri_id, 1);
+			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s\n", result_api);
+			log_message ("LOG.log", hm->method.ptr, 200);
 		}
-		else if (mg_http_match_uri(hm, "/10"))
+		else if (mg_http_match_uri(hm, "/covid"))
 		{
-			aux = rand() % 10;
-			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "{\"result\": %d}", aux);
+			result_api = get_api(NULL, 2);
+			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", result_api);
 			log_message ("../LOG.log", hm->method.ptr, 200);
 		}
 		else if (mg_http_match_uri(hm, "/20"))

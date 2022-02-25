@@ -6,18 +6,16 @@ RESET = \033[0m
 
 NAME = API
 
-SRC = get_body.c log_server.c mongoose.c server.c
+SRC = get_api.c log_server.c mongoose.c server.c
 
 OBJS = $(SRC:.c=.o)
 
 FLAG = -lcurl
 
-CFLAG = -Wall -Wextra -Werror
-
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	gcc $(OBJS) -o $(NAME) $(CFLAG) $(FLAG)
+	gcc $(OBJS) -o $(NAME) $(FLAG)
 	@echo "$(NAME): $(GREEN)$(NAME) was created$(RESET)"
 
 %.o: %.c
