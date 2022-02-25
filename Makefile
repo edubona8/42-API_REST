@@ -38,7 +38,7 @@ $(MONGOOSE):
 				@echo "\n $(GREEN) $(MONGOOSE) was created $(RESET)\n"
 
 $(NAME):    $(MONGOOSE) $(OBJS)
-				$(CC) $(MONGOOSE)  $(OBJS) $(LIB) -o $(NAME) 					
+			$(CC) $(OBJS) $(LIB)  ./LIBS/mongoose.c -o $(NAME)
 				
 
 clean:
