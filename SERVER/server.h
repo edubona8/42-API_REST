@@ -2,7 +2,7 @@
 # define SERVER_H
 
 
-#include "../LIBS/mongoose.h"
+#include "mongoose.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

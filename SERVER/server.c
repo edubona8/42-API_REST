@@ -27,7 +27,7 @@ static void	fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
 		{
 			result_api = get_api(game);
 			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", result_api);
-			log_message ("../LOG.log", hm->method.ptr, 200);
+			log_message ("LOG.log", hm->method.ptr, 200);
 		}
 
 		else if (mg_http_match_uri(hm, "/4"))
