@@ -48,6 +48,12 @@ static void	fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
 			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", result_api);
 			log_message ("../LOG.log", hm->method.ptr, 200);
 		}
+		else if (mg_http_match_uri(hm, "/tech"))
+		{
+			result_api = get_api(NULL, 4);
+			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", result_api);
+			log_message ("../LOG.log", hm->method.ptr, 200);
+		}
 		else
 		{
 			mg_http_reply(c, 404, "Content-Type: application/json\r\n", "{\"result\": \"Página não encontrada\"}");

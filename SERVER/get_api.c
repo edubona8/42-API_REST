@@ -27,7 +27,7 @@ char	*get_api(char *game, int u)
 	CURL	*curl;
 	CURLcode	res;
 	t_MemoryStruct	chunk;
-	char	url[100];
+	char	url[256];
 	
 	chunk.memory = malloc(1);
 	chunk.size = 0;
@@ -47,6 +47,8 @@ char	*get_api(char *game, int u)
 		strcpy(url, "https://covid19-brazil-api.vercel.app/api/report/v1/brazil/uf/sp");
 	else if(u == 3)
 		strcpy(url, "https://api.hgbrasil.com/finance/stock_price?key=af83d52f&symbol=b3sa3");
+	else if(u == 4)
+		strcpy(url, "https://newsapi.org/v2/everything?q=tech&from=2022-01-25&sortBy=publishedAt&apiKey=82c35576d3cc448986574b64a3753ea7");
 	curl_easy_setopt(curl, CURLOPT_URL, url);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_memory_call_back);
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);
