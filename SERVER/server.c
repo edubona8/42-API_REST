@@ -29,16 +29,9 @@ static void	fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
 			log_message ("LOG.log", hm->method.ptr, 200);
 		}
 
-		else if (mg_http_match_uri(hm, "/sp"))
+		else if (mg_http_match_uri(hm, "/weather"))
 		{
 			uri_id = "455827";
-			result_api = get_api(uri_id,1);
-			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s\n", result_api);
-			log_message ("LOG.log", hm->method.ptr, 200);
-		}
-		else if (mg_http_match_uri(hm, "/rj"))
-		{
-			uri_id = "455825";
 			result_api = get_api(uri_id, 1);
 			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s\n", result_api);
 			log_message ("LOG.log", hm->method.ptr, 200);
@@ -49,15 +42,15 @@ static void	fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
 			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", result_api);
 			log_message ("../LOG.log", hm->method.ptr, 200);
 		}
-		else if (mg_http_match_uri(hm, "/20"))
+		else if (mg_http_match_uri(hm, "/finance"))
 		{
-			aux = rand() % 20;
-			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "{\"result\": %d}", aux);
+			result_api = get_api(NULL, 3);
+			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", result_api);
 			log_message ("../LOG.log", hm->method.ptr, 200);
 		}
 		else
 		{
-			mg_http_reply(c, 404, "Content-Type: application/json\r\n", "{\"result\": \"Escolha um dado: Dado não encontrado\"}");
+			mg_http_reply(c, 404, "Content-Type: application/json\r\n", "{\"result\": \"Página não encontrada\"}");
 			log_message ("../LOG.log", hm->method.ptr, 404);
 		}
 	}

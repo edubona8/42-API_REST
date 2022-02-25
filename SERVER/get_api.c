@@ -40,12 +40,13 @@ char	*get_api(char *game, int u)
 	
 	if(u == 1)
 	{
-		strcpy(url,"https://api.hgbrasil.com/weather?woeid=");
-		strcat(url,game);
+		strcpy(url, "https://api.hgbrasil.com/weather?woeid=");
+		strcat(url, game);
 	}
-	else
-		strcpy(url,"https://api.covid19api.com/live/country/brazil");
-		
+	else if(u == 2)
+		strcpy(url, "https://covid19-brazil-api.vercel.app/api/report/v1/brazil/uf/sp");
+	else if(u == 3)
+		strcpy(url, "https://api.hgbrasil.com/finance/stock_price?key=af83d52f&symbol=b3sa3");
 	curl_easy_setopt(curl, CURLOPT_URL, url);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_memory_call_back);
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);
