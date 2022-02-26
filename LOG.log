@@ -180,3 +180,45 @@ Host: localhost:8000
 User-Agent: insomnia/2021.7.2
 Accept: */*
 
+Status: 200
+Ultima requisição: Fri Feb 25 23:25:54 2022
+GET /finance HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 23:28:14 2022
+GET /finance HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 23:28:18 2022
+GET /finance HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 23:28:20 2022
+GET /finance HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 23:28:20 2022
+GET /finance HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 23:30:34 2022
+GET /tech HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
