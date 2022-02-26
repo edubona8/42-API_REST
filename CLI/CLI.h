@@ -1,5 +1,5 @@
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef CLI_H
+# define CLI_H
 
 # include <stdlib.h>
 # include <unistd.h>
@@ -7,8 +7,20 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <fcntl.h>
+# include <string.h>
 
 #define BUFFER_SIZE 42
+
+typedef struct s_data
+{
+    int root;
+    int weather;
+    int covid;
+    int finance;
+    int tech;
+    int error;
+}              t_data;
+
 
 char    *get_next_line(int fd);
 char    *ft_strdup(char *string);

@@ -1,4 +1,4 @@
-#include "get_next_line.h"
+#include "CLI.h"
 
 static char	*make_backup(int fd, char *backup, char *buffer);
 static char	*make_line(char *backup);

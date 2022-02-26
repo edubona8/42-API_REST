@@ -19,3 +19,164 @@ Host: localhost:8000
 User-Agent: insomnia/2021.7.2
 Accept: */*
 
+Status: 200
+Ultima requisição: Fri Feb 25 17:48:11 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 17:48:19 2022
+GET /finance HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 404
+Ultima requisição: Fri Feb 25 17:48:45 2022
+GET /as HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 18:02:04 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 18:02:25 2022
+GET /finance HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 18:02:33 2022
+GET /tech HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 18:02:40 2022
+GET /tech HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 18:39:37 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 18:42:17 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 404
+Ultima requisição: Fri Feb 25 18:42:54 2022
+GET /ahahahaha HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 18:45:16 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 404
+Ultima requisição: Fri Feb 25 18:45:26 2022
+GET /dfadas HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 404
+Ultima requisição: Fri Feb 25 18:45:36 2022
+GET /dfadas HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 404
+Ultima requisição: Fri Feb 25 18:47:16 2022
+GET /sadadsa HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 18:47:32 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 18:47:38 2022
+GET /tech HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 18:50:05 2022
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 404
+Ultima requisição: Fri Feb 25 18:50:10 2022
+GET /sdadasda HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 404
+Ultima requisição: Fri Feb 25 18:50:31 2022
+GET /sdadasda HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 19:52:32 2022
+GET /weather HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 21:09:19 2022
+GET /weather HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 21:09:58 2022
+GET /weather HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Fri Feb 25 21:34:59 2022
+GET /weather HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
