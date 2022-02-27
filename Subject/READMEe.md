@@ -40,8 +40,7 @@ Para executar a API basta usar o seguinte comando:
 $ ./API
 ```
 Após isso ela vai estar pronta para receber requisições.
-
-https://user-images.githubusercontent.com/87132928/155864262-8c1b546b-8f31-4909-abc9-c3d8c7b777b9.gif
+![2022-02-26-22-08-57](https://user-images.githubusercontent.com/87132928/155864552-726b1f98-6ac3-44bc-9b55-26e00528862a.gif)
 
 ### CLI
 
