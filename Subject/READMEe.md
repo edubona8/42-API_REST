@@ -99,4 +99,12 @@ A partir disso comecei a explorar algumas funcionalidades do Mongoose, dentro da
 <br>
 
 Para minha API tive que realizar requisições para outras API´s e armarnezar o conteudo dela, o mangoose não tem essa funcionalidade e em decorrencia disso tive que usar a Libcurl que é uma outra  biblioteca de transferência de URL do lado do cliente nos permitindo realizar requições HTTP e armazenar o conteudo para ser utilizado na nossa própria API. Aqui está o resultado final da função:
+<br>
+
 ![image](https://user-images.githubusercontent.com/87132928/155903592-c737f8f6-2fa6-47e8-896b-93581a59160c.png)
+
+<br>
+
+O Mangoose também não dispõe de alguma ferramenta fácil de cadastro de log, então eu mesmo criei essa função onde nela consigo armazenar o método, horario e status da requisição em um arquivo
+<br>
+![image](https://user-images.githubusercontent.com/87132928/155903922-f03e0e12-4f80-43de-95ff-8081d7c9192e.png)
