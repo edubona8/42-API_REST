@@ -30,9 +30,9 @@ int main()
             requests.tech++;
         if (strstr(tmp_line, "Status: 404"))
             requests.error++;
-	}
+        free(tmp_line);
+    }
     draw(&requests);
-
 }
 
 void    init_values(t_data *requests)

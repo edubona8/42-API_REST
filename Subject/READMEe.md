@@ -5,11 +5,8 @@
 
 ## Descrição
 
-<<<<<<< HEAD
-    Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso tive desenvolvi uma aplicação 
-=======
-   Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso contrui uma aplicação(CLI) que consome e organiza os logs da API, nos mostrando a quantidade de requisições para cada path e o metódo utilizado.
->>>>>>> 450ff3b09c6cdb1cad5c6358b116c79ddd8f0496
+    Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso contrui uma aplicação(CLI) que consome e organiza os logs da API, nos mostrando a quantidade de requisições para cada rota e o metódo utilizado.
+
 
 <h1></h1>
 
@@ -77,6 +74,10 @@ Voce pode testa-las usando o seu browser ou softwares dedicados como o Postman o
 É importante afirmar que o formato de retorno sempre vão ser em .JSON
   
 ![2022-02-27-01-07-23](https://user-images.githubusercontent.com/87132928/155867981-ec21c21d-9627-4710-9404-576aaa6dcbc8.gif)
+
+<h1></h1>
+
+## Como eu fiz?
 
 
 
