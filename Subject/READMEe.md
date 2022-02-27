@@ -39,7 +39,7 @@ $ make server
 $ make cli
 ```
 
-<h1></h1>
+---
 
 ## Como utilizar:
 
