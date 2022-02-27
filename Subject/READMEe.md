@@ -2,7 +2,7 @@
 
 ## Descrição
 
-    Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima).
+    Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso tive desenvolvi uma aplicação 
 
 <h1></h1>
 

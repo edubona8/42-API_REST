@@ -58,6 +58,5 @@ char	*get_api(int switch_)
 		exit(-2);
 	}
 	curl_easy_cleanup(curl);
-	// printf("%s\n", chunk.memory);
 	return (chunk.memory);
 }
