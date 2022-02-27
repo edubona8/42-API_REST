@@ -87,5 +87,5 @@ Voce pode testa-las usando o seu browser ou softwares dedicados como o Postman o
 ## Como eu fiz?
 
 Bom o primeiro passo deste projeto e de alguma forma estabelecer uma conexão HTTP para assim conseguir receber as requisições, existem diversas maneiras de isso ser feito no meu caso eu optei em usar a biblioteca "Mongoose", a maior vantagem e desvatagem dela é ser simples por um lado o uso dela e extremamente intuitiva e tem uma documentação robusta no outro falta algumas ferramentas, usei o modelo "minimo servidor HTTP" como base para o meu projeto.
-![image](https://user-images.githubusercontent.com/87132928/155895469-8f420aa1-18a5-4d46-833d-d68a7d6a4324.png)
+![image](https://user-images.githubusercontent.com/87132928/155895512-39f66d3c-749b-46f1-94a9-52f6a4c254d0.png)
 
