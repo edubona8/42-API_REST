@@ -49,7 +49,7 @@ Após isso ela vai estar pronta para receber requisições.
 <br>
 ### CLI
 
-Para executar a API basta usar o seguinte comando: 
+Para executar o CLI basta usar o seguinte comando: 
 ```
 $ ./CLI_
 ```
