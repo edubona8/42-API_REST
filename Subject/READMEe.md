@@ -91,5 +91,7 @@ Bom o primeiro passo deste projeto e de alguma forma estabelecer uma conexão HT
 ![image](https://user-images.githubusercontent.com/87132928/155896050-eff80eaf-932f-475c-9e8f-26cf15ee5bb3.png)
 
 A partir disso comecei a explorar algumas funcionalidades do Mongoose, dentro do fn (manipulador de eventos) disse que toda vez que for recebido uma mensagem a função compara à mesma a alguma rota já estabelecida e a partir disso retorna a mensagem em formato .JSON dependendo da rota escolhida. Após isso ele ainda escreve uma mensagem de log em um arquivo, o resultado ficou assim :
-![image](https://user-images.githubusercontent.com/87132928/155901050-15a616f7-a6db-46ec-8579-c04828240a79.png)
+<br>
+
+![image](https://user-images.githubusercontent.com/87132928/155901153-b290fa03-1bbe-47b6-a539-f18f30d1c40f.png)
 
