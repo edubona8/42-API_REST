@@ -39,13 +39,13 @@ char	*get_api(int switch_)
 	}
 	
 	if(switch_ == 1)
-		strcpy(url, "https://api.hgbrasil.com/weather?woeid=");
+		strcpy(url, WEATHER_URL);
 	else if(switch_ == 2)
-		strcpy(url, "https://covid19-brazil-api.vercel.app/api/report/v1/brazil/uf/sp");
+		strcpy(url, COVID_URL);
 	else if(switch_ == 3)
-		strcpy(url, "https://api.hgbrasil.com/finance/stock_price?key=af83d52f&symbol=b3sa3");
+		strcpy(url, FINANCE_URL);
 	else if(switch_ == 4)
-		strcpy(url, "https://newsapi.org/v2/everything?q=tech&from=2022-01-25&sortBy=publishedAt&apiKey=82c35576d3cc448986574b64a3753ea7");
+		strcpy(url, TECH_URL);
 	curl_easy_setopt(curl, CURLOPT_URL, url);
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_memory_call_back);
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);

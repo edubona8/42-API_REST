@@ -64,7 +64,7 @@ int	main(int argc, char *argv[])
 
 	mg_log_set("4");
 	mg_mgr_init(&mgr);// Init manager
-	mg_http_listen(&mgr, "http://localhost:8000", fn, &mgr);// Setup listener
+	mg_http_listen(&mgr, LOCAL_ROST, fn, &mgr);// Setup listener
 	for (;;) mg_mgr_poll (&mgr, 1000);// Event loop
 	mg_mgr_free(&mgr);// Cleanup
 	return (0);
