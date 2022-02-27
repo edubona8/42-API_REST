@@ -55,6 +55,7 @@ $ ./CLI_
 ```
 O resultado te trará uma tabela com as informações dos LOGS referentes as requisições da API.
 <br>
+<br>
 ![image](https://user-images.githubusercontent.com/87132928/155869476-d3654c0c-f9d1-4457-8ec4-e0df34a36918.png)
 <br>
 <br>
