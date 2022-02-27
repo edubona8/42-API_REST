@@ -133,5 +133,8 @@ Passando por todos esses pontos o projeto vai estar finalizado.
 * What is a REST API? = https://www.youtube.com/watch?v=lsMQRaeKNDk.
 * Introdução a APIs (Rods Cadete da 42 :p ) = https://www.youtube.com/watch?v=kEVUfzIRkFI.
 * vnazioze | Vinicius e ldatilio | Lucas que me ajudaram demais no projeto.
+* Documentação da API de finanças = https://hgbrasil.com/status/finance
+* Documentação da API de dados sobre covid = https://covid19-brazil-api-docs.vercel.app/
+* Documentação da API de notícias tech = https://newsapi.org/docs
+* Documentação da API de tempo = https://hgbrasil.com/status/weather
  
-
