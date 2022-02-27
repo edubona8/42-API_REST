@@ -5,8 +5,15 @@
 
 ## Descrição
 
+<<<<<<< HEAD
     Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso contrui uma aplicação(CLI) que consome e organiza os logs da API, nos mostrando a quantidade de requisições para cada rota e o metódo utilizado.
 
+=======
+<<<<<<< HEAD
+    Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso tive desenvolvi uma aplicação 
+=======
+   Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso contrui uma aplicação(CLI) que consome e organiza os logs da API, nos mostrando a quantidade de requisições para cada path e o metódo utilizado.
+>>>>>>> 6aea64deabb307cb9e5add30468759d6831410d0
 
 <h1></h1>
 
