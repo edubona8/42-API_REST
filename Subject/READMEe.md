@@ -24,7 +24,7 @@ $ git clone https://github.com/42sp/42labs-selection-process-v2-edubona8.git 42-
 $ cd 42-labs
 ```
 ### 3º Passo: Criar os executaveis do programa:
-É Preciso criar os executaveis da API e também do CLI, voce pode fazer isso realizando os seguintes comandos:
+É Preciso criar os executaveis da API e também do CLI, você pode fazer isso realizando os seguintes comandos:
 
 ```
 $ make server
@@ -70,7 +70,7 @@ Está API trabalha com cinco rotas diferentes sendo elas:
 
 Voce pode testa-las usando o seu browser ou softwares dedicados como o Postman ou o Insomnia.
 <br>
-É importante afirmar que o formato de retorno sempre vai ser em .JSON
+É importante afirmar que o formato de retorno sempre vão ser em .JSON
   
 ![2022-02-27-01-07-23](https://user-images.githubusercontent.com/87132928/155867981-ec21c21d-9627-4710-9404-576aaa6dcbc8.gif)
 
