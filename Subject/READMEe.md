@@ -1,4 +1,4 @@
-# Students API
+# 42-LabsNEWS
 
 ## Descrição
 
