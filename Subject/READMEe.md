@@ -62,14 +62,12 @@ Está API trabalha com cinco rotas diferentes sendo elas:
 * /tech = retorna notícias sobre o universo tech
 * /covid = retorna dados sobre o covid em SP
 * /finance = retorna dados sobre as ações da B3 
-<br>
 
 Voce pode testa-las usando o seu browser ou softwares dedicados como o Postman ou o Insomnia.
 <br>
 É importante afirmar que o formato de retorno sempre vai ser em .JSON
   
-
-
+![2022-02-27-01-07-23](https://user-images.githubusercontent.com/87132928/155867981-ec21c21d-9627-4710-9404-576aaa6dcbc8.gif)
 
 
 
