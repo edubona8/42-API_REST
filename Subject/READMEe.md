@@ -5,19 +5,13 @@
 
 ## Descrição
 
-<<<<<<< HEAD
-    Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso contrui uma aplicação(CLI) que consome e organiza os logs da API, nos mostrando a quantidade de requisições para cada rota e o metódo utilizado.
+Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso contrui uma aplicação(CLI) que consome e organiza os logs da API, nos mostrando a quantidade de requisições para cada rota e o metódo utilizado.
 
-=======
-<<<<<<< HEAD
-    Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso tive desenvolvi uma aplicação 
-=======
-   Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso contrui uma aplicação(CLI) que consome e organiza os logs da API, nos mostrando a quantidade de requisições para cada path e o metódo utilizado.
->>>>>>> 6aea64deabb307cb9e5add30468759d6831410d0
 
-<h1></h1>
+---
 
 ## Instalação
+<br>
 
 ### 1º Passo: Pré-requisitos 
 É necessario ter a biblioteca Libcurl, ela geralmente não vem instalada por padrão na maioria dos sistemas. No entanto, você pode obte-lá usando:
@@ -42,6 +36,7 @@ $ make cli
 ---
 
 ## Como utilizar:
+<br>
 
 ### API
 
@@ -82,10 +77,14 @@ Voce pode testa-las usando o seu browser ou softwares dedicados como o Postman o
   
 ![2022-02-27-01-07-23](https://user-images.githubusercontent.com/87132928/155867981-ec21c21d-9627-4710-9404-576aaa6dcbc8.gif)
 
-<h1></h1>
+<br>
+
+---
+
+<br>
 
 ## Como eu fiz?
-
+<br>
 Bom o primeiro passo deste projeto e de alguma forma estabelecer uma conexão HTTP para assim conseguir receber as requisições, existem diversas maneiras de isso ser feito no meu caso eu optei em usar a biblioteca "Mongoose", a maior vantagem e desvatagem dela é ser simples por um lado o uso dela e extremamente intuitiva e tem uma documentação robusta no outro falta algumas ferramentas, usei o modelo "minimo servidor HTTP" como base para o meu projeto.
 <br>
 <br>
