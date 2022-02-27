@@ -122,3 +122,14 @@ E com isso a API vai estar pronta para receber requisições e armazenar os logs
 <br>
 
 Passando por todos esses pontos o projeto vai estar finalizado.
+
+<br>
+
+## Bibliografia
+
+* Documentação Mongoose
+* Documentação Libcurl
+* APIs for Beginners - How to use an API (Full Course / Tutorial) = https://www.youtube.com/watch?v=GZvSYJDk-us
+* What is a REST API? = https://www.youtube.com/watch?v=lsMQRaeKNDk
+* Introdução a APIs (Rods Cadete da 42 :p ) = https://www.youtube.com/watch?v=kEVUfzIRkFI
+
