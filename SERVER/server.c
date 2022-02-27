@@ -32,7 +32,7 @@ static void	fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
 	if (ev == MG_EV_HTTP_MSG) //verifica se a mensagem recebida é uma requisição HTTP
 	{
 		hm = (struct mg_http_message *)ev_data; //recebe a mensagem que foi feita na requisição do cliente
-		if (mg_http_match_uri(hm, "/")) //compara a mensagem recebida
+		if (mg_http_match_uri(hm, "/")) //compara a mensagem recebida com a rota
 		{
 			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "{\"result\": \"Bem vindo a 42LabsNEWS selecione um tópico!\"}");
 			log_message ("LOG.log", hm->method.ptr, 200);
