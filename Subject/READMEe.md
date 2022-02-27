@@ -41,7 +41,7 @@ $ ./API
 ```
 Após isso ela vai estar pronta para receber requisições.
 
-<img align="center" height="960" width="540" src="https://user-images.githubusercontent.com/87132928/155864262-8c1b546b-8f31-4909-abc9-c3d8c7b777b9.gif">
+https://user-images.githubusercontent.com/87132928/155864262-8c1b546b-8f31-4909-abc9-c3d8c7b777b9.gif
 
 ### CLI
 
