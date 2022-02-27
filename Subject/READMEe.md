@@ -127,8 +127,8 @@ Passando por todos esses pontos o projeto vai estar finalizado.
 
 ## Bibliografia
 
-* Documentação Mongoose
-* Documentação Libcurl
+* Documentação Mongoose = https://mongoose.ws/documentation/
+* Documentação Libcurl = https://curl.se/libcurl/
 * APIs for Beginners - How to use an API (Full Course / Tutorial) = https://www.youtube.com/watch?v=GZvSYJDk-us
 * What is a REST API? = https://www.youtube.com/watch?v=lsMQRaeKNDk
 * Introdução a APIs (Rods Cadete da 42 :p ) = https://www.youtube.com/watch?v=kEVUfzIRkFI
