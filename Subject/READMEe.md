@@ -21,7 +21,7 @@ $ git clone https://github.com/42sp/42labs-selection-process-v2-edubona8.git 42-
 $ cd 42-labs
 ```
 ### 3º Passo: Criar os executaveis do programa:
-É Preciso criar os executaveis da API e também do CLI, voec pode fazer isso realizando os seguintes comandos:
+É Preciso criar os executaveis da API e também do CLI, voce pode fazer isso realizando os seguintes comandos:
 
 ```
 $ make server
@@ -41,7 +41,7 @@ $ ./API
 ```
 Após isso ela vai estar pronta para receber requisições.
 
-<img align="center" height="300" width="400" src="https://user-images.githubusercontent.com/87132928/155864262-8c1b546b-8f31-4909-abc9-c3d8c7b777b9.gif">
+<img align="center" height="500" width="500" src="https://user-images.githubusercontent.com/87132928/155864262-8c1b546b-8f31-4909-abc9-c3d8c7b777b9.gif">
 
 ### CLI
 
