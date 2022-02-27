@@ -31,6 +31,7 @@ $ make cli
 <h1></h1>
 
 ## Como utilizar:
+<br>
 
 ### API
 
@@ -42,15 +43,33 @@ $ ./API
 Após isso ela vai estar pronta para receber requisições.
 
 ![2022-02-26-22-08-57](https://user-images.githubusercontent.com/87132928/155864552-726b1f98-6ac3-44bc-9b55-26e00528862a.gif)
-
+<br>
+<br>
 ### CLI
 
 Para executar a API basta usar o seguinte comando: 
-
 ```
 $ ./CLI_
 ```
-O resultado te trará uma tabela com as informações dos LOGS da API.
+O resultado te trará uma tabela com as informações dos LOGS referentes as requisições da API.
+<br>
+<br>
+### Requisições
+
+Está API trabalha com cinco rotas diferentes sendo elas:
+* / = retorna uma string informando os tópicos abordados na API
+* /weather = retorna dados sobre o clima em SP
+* /tech = retorna notícias sobre o universo tech
+* /covid = retorna dados sobre o covid em SP
+* /finance = retorna dados sobre as ações da B3 
+<br>
+
+Voce pode testa-las usando o seu browser ou softwares dedicados como o Postman ou o Insomnia.
+<br>
+É importante afirmar que o formato de retorno sempre vai ser em .JSON
+  
+
+
 
 
 
