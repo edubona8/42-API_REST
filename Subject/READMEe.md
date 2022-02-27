@@ -106,5 +106,16 @@ Para minha API tive que realizar requisições para outras API´s e armarnezar o
 <br>
 
 O Mangoose também não dispõe de alguma ferramenta fácil de cadastro de log, então eu mesmo criei essa função onde nela consigo armazenar o método, horario e status da requisição em um arquivo
+
 <br>
+
 ![image](https://user-images.githubusercontent.com/87132928/155903922-f03e0e12-4f80-43de-95ff-8081d7c9192e.png)
+
+<br>
+
+E com isso nossa API vai estar pronta para receber requisições e armazenar os logs. Agora a próxima tarefa é fazer uma aplicação que consome os dados do log e o organizam em uma tabela, e pára fazer isso eu basicamente uso a get_next_line (função consegue ler toda uma linha de um arquivo) até o final do arquivo de log, e quando eu achar na linha o método da requisição e a rota correspondende (ex: ""GET /weather") conto +1 em um contador, assim conseguindo o valor da quantidade de requisições feitas para cada rota.
+
+<br>
+
+![image](https://user-images.githubusercontent.com/87132928/155904344-43ea4f56-6b36-4174-bb18-37e65cce4d1c.png)
+
