@@ -12,42 +12,53 @@
 
 #include "server.h"
 
+/**
+ * @brief		Uma função de manipulador de eventos que faz a requisição para  outra API dependendo
+ *				da rota e escreve uma mensagem de log.
+ *
+ * @param    c			Uma conexão que o evento recebeu.
+ * @param    ev			Um número de evento, definido em mongoose.h. Por exemplo,
+*					quando os dados chegam em uma conexão de entrada
+ * @param    ev_data	Aponta para algum dado especifico do evento
+ * @param    fn_data	Um ponteiro arbitrário, que será passado como fn_data quando um manipulador de eventos 
+ * 					for chamado. Este ponteiro vai ser armazenado em uma struct de conexão como a c->fn_data
+ */
 static void	fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
 {
 	struct mg_http_message	*hm;
-	char					*url;
+	char					*msg;
 
 
-	if (ev == MG_EV_HTTP_MSG)
+	if (ev == MG_EV_HTTP_MSG) //verifica qual tipo de requisição foi feita  
 	{
-		hm = (struct mg_http_message *)ev_data;
-		if (mg_http_match_uri(hm, "/"))
+		hm = (struct mg_http_message *)ev_data; //recebe a mensagem que foi feita na requisição do cliente
+		if (mg_http_match_uri(hm, "/")) //compara a mensagem recebida
 		{
 			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "{\"result\": \"Bem vindo a 42LabsNEWS selecione um tópico!\"}");
 			log_message ("LOG.log", hm->method.ptr, 200);
 		}
-		else if (mg_http_match_uri(hm, "/weather"))
+		else if (mg_http_match_uri(hm, "/weather")) 
 		{
-			url = get_api(1);
-			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", url);
-			log_message ("LOG.log", hm->method.ptr, 200);
+			msg = get_api(1); //obtem o conteudo da API externa que foi requesitada
+			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", msg); //retorna a mensagem para o cliente em . JSON
+			log_message ("LOG.log", hm->method.ptr, 200); //escreve a mensagem de LOG
 		}
 		else if (mg_http_match_uri(hm, "/covid"))
 		{
-			url = get_api(2);
-			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", url);
+			msg = get_api(2);
+			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", msg);
 			log_message ("LOG.log", hm->method.ptr, 200);
 		}
 		else if (mg_http_match_uri(hm, "/finance"))
 		{
-			url = get_api(3);
-			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", url);
+			msg = get_api(3);
+			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", msg);
 			log_message ("LOG.log", hm->method.ptr, 200);
 		}
 		else if (mg_http_match_uri(hm, "/tech"))
 		{
-			url = get_api(4);
-			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", url);
+			msg = get_api(4);
+			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", msg);
 			log_message ("LOG.log", hm->method.ptr, 200);
 		}
 		else
@@ -63,9 +74,9 @@ int	main(int argc, char *argv[])
 	struct mg_mgr	mgr;
 
 	mg_log_set("4");
-	mg_mgr_init(&mgr);// Init manager
-	mg_http_listen(&mgr, LOCAL_ROST, fn, &mgr);// Setup listener
-	for (;;) mg_mgr_poll (&mgr, 1000);// Event loop
-	mg_mgr_free(&mgr);// Cleanup
+	mg_mgr_init(&mgr);// Iniciar gerenciador
+	mg_http_listen(&mgr, LOCAL_ROST, fn, &mgr);// Configurando o ouvinte HTTP
+	for (;;) mg_mgr_poll (&mgr, 1000);// Loop de eventos
+	mg_mgr_free(&mgr);// Free na struct
 	return (0);
 }

@@ -1,5 +1,15 @@
 #include "server.h"
 
+	/**
+ * @brief    Baixar dados em um bloco de memória 
+ *
+ * @param    contents
+ * @param    size        Tamando do vetor.
+ * @param    nmemb        Tamanho da memória em n bytes.
+ * @param    userp
+ * @return    size_t        Tamanho real do chunk de memória.
+ */
+
 static size_t	write_memory_call_back(void *contents, size_t size,
 size_t nmemb, void *userp)
 {
@@ -22,8 +32,18 @@ size_t nmemb, void *userp)
 	return (realsize);
 }
 
+
+/**
+ * @brief    Reallizar uma requisição utiliando a Libcurl para uma API externa e armazenando sua resposta
+ * para utilizar no mg_http_reply()
+ *
+ * @param    switch_    Forma de identificação de qual API requisitar
+ * @return    char*		Bloco de memória que armazena a resposta em .JSON.
+ */
+
 char	*get_api(int switch_)
 {
+	
 	CURL	*curl;
 	CURLcode	res;
 	t_MemoryStruct	chunk;

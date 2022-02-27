@@ -82,13 +82,12 @@ Voce pode testa-las usando o seu browser ou softwares dedicados como o Postman o
 
 <br>
 
-## Como eu fiz?
+## Como o projeto foi feito?
 <br>
-Bom o primeiro passo deste projeto e de alguma forma estabelecer uma conexão HTTP para assim conseguir receber as requisições, existem diversas maneiras de isso ser feito no meu caso eu optei em usar a biblioteca "Mongoose", a maior vantagem e desvatagem dela é ser simples por um lado o uso dela e extremamente intuitiva e tem uma documentação robusta no outro falta algumas ferramentas, usei o modelo "minimo servidor HTTP" como base para o meu projeto.
+Bom o primeiro passo deste projeto e de alguma forma estabelecer uma conexão HTTP para assim conseguir receber as requisições, existem diversas maneiras de isso ser feito no meu caso eu optei em usar a biblioteca "Mongoose", a maior vantagem e desvatagem do Mongoose é ser simples por um lado o uso dele e extremamente intuitivo e tem uma documentação robusta no outro falta algumas ferramentas, usei o modelo "minimo servidor HTTP" como base para o meu projeto.
 <br>
 <br>
 
 ![image](https://user-images.githubusercontent.com/87132928/155896050-eff80eaf-932f-475c-9e8f-26cf15ee5bb3.png)
 
-
-
+A partir disso comecei a explorar algumas funcionalidades do Mongoose, dentro do fn (manipulador de eventos) disse que toda vez que for recebido uma mensagem a função compara a mesma a alguma rota ja estabelecida e a partir disso retorna a mensagem em formato .JSON dependendo da rota escolhida. Apos isso ele ainda escreve uma mensagem de log em um arquivo, o resultado ficou assim :
