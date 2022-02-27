@@ -31,7 +31,6 @@ $ make cli
 <h1></h1>
 
 ## Como utilizar:
-<br>
 
 ### API
 
