@@ -84,14 +84,19 @@ Voce pode testa-las usando o seu browser ou softwares dedicados como o Postman o
 
 ## Como o projeto foi feito?
 <br>
-Bom o primeiro passo deste projeto e de alguma forma estabelecer uma conexão HTTP para assim conseguir receber as requisições, existem diversas maneiras de isso ser feito no meu caso eu optei em usar a biblioteca "Mongoose", a maior vantagem e desvatagem do Mongoose é ser simples por um lado o uso dele e extremamente intuitivo e tem uma documentação robusta no outro falta algumas ferramentas, usei o modelo "minimo servidor HTTP" como base para o meu projeto.
+Bom o primeiro passo deste projeto foi encontrar alguma forma construir um servidor que recebesse as requisições HTTP , existem diversas maneiras de isso ser feito no meu caso eu optei em usar a biblioteca "Mongoose". A maior vantagem e desvatagem do Mongoose é ser simples, por um lado o uso dele e extremamente intuitivo e tem uma documentação robusta mas no outro falta algumas ferramentas, usei o modelo "minimo servidor HTTP" como base para o meu projeto.
 <br>
 <br>
 
 ![image](https://user-images.githubusercontent.com/87132928/155896050-eff80eaf-932f-475c-9e8f-26cf15ee5bb3.png)
 
-A partir disso comecei a explorar algumas funcionalidades do Mongoose, dentro do fn (manipulador de eventos) disse que toda vez que for recebido uma mensagem a função compara à mesma a alguma rota já estabelecida e a partir disso retorna a mensagem em formato .JSON dependendo da rota escolhida. Após isso ele ainda escreve uma mensagem de log em um arquivo, o resultado ficou assim :
+A partir disso comecei a explorar algumas funcionalidades do Mongoose, dentro da função fn (manipulador de eventos) disse que toda vez que for recebido uma mensagem da requisição a função compara à mesma a alguma rota já estabelecida e a partir disso retorna a mensagem em formato .JSON dependendo da rota escolhida. Após isso ele ainda escreve uma mensagem de log em um arquivo, o resultado ficou assim :
+
 <br>
 
 ![image](https://user-images.githubusercontent.com/87132928/155901153-b290fa03-1bbe-47b6-a539-f18f30d1c40f.png)
 
+<br>
+
+Para minha API tive que realizar requisições para outras API´s e armarnezar o conteudo dela, o mangoose não tem essa funcionalidade e em decorrencia disso tive que usar a Libcurl que é uma outra  biblioteca de transferência de URL do lado do cliente nos permitindo realizar requições HTTP e armazenar o conteudo para ser utilizado na nossa própria API. Aqui está o resultado final da função:
+![image](https://user-images.githubusercontent.com/87132928/155903592-c737f8f6-2fa6-47e8-896b-93581a59160c.png)
