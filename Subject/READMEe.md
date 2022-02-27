@@ -30,7 +30,6 @@ $ cd 42-labs
 $ make server
 $ make cli
 ```
-![image](https://user-images.githubusercontent.com/87132928/155869476-d3654c0c-f9d1-4457-8ec4-e0df34a36918.png)
 
 <h1></h1>
 
@@ -55,6 +54,7 @@ Para executar o CLI basta usar o seguinte comando:
 $ ./CLI_
 ```
 O resultado te trará uma tabela com as informações dos LOGS referentes as requisições da API.
+![image](https://user-images.githubusercontent.com/87132928/155869476-d3654c0c-f9d1-4457-8ec4-e0df34a36918.png)
 <br>
 <br>
 ### Requisições
