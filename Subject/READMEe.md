@@ -1,5 +1,5 @@
 # 42-LabsNEWS
-<br>
+
 ![Cpia de NEWS LOWER THIRDS - Feito com PosterMyWall](https://user-images.githubusercontent.com/87132928/155868696-7dd870d3-6d6f-41d4-a067-4a0ba9f51c2c.jpg)
 
 
