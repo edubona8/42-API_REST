@@ -30,6 +30,7 @@ $ cd 42-labs
 $ make server
 $ make cli
 ```
+![image](https://user-images.githubusercontent.com/87132928/155869476-d3654c0c-f9d1-4457-8ec4-e0df34a36918.png)
 
 <h1></h1>
 
