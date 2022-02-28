@@ -89,7 +89,7 @@ Bom o primeiro passo deste projeto foi encontrar alguma forma construir um servi
 
 ![image](https://user-images.githubusercontent.com/87132928/155896050-eff80eaf-932f-475c-9e8f-26cf15ee5bb3.png)
 
-A partir disso comecei a explorar algumas funcionalidades do Mongoose, dentro da função fn (manipulador de eventos) fiz a implementação que toda vez que for recebido uma mensagem da requisição a função compara à mesma a alguma rota já estabelecida e a partir disso retorna a mensagem em formato .JSON dependendo da rota escolhida. Após isso ele ainda escreve uma mensagem de log em um arquivo, o resultado ficou assim :
+A partir disso comecei a explorar algumas funcionalidades do Mongoose, dentro da função fn (manipulador de eventos) fiz a implementação que toda vez que for recebido a mensagem  a função compara à mesma a alguma rota já estabelecida e a partir disso retorna a mensagem em formato .JSON dependendo da rota escolhida. Após isso ele ainda escreve uma mensagem de log em um arquivo, o resultado ficou assim :
 
 <br>
 
