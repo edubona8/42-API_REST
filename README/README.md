@@ -5,7 +5,7 @@
 
 ## Descrição
 <br>
-Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso contrui uma aplicação(CLI) que consome e organiza os logs da API, nos mostrando a quantidade de requisições para cada rota e o metódo utilizado.
+Neste projeto desenvolvi em C uma API que segue o modelo de arquitetura REST, ele é um portal de noticias que retorna informações sobre alguns tópicos (covid, finanças, tech, clima). Além disso construi uma aplicação (CLI) que consome e organiza os logs da API, nos mostrando a quantidade de requisições para cada rota e o metódo utilizado.
 
 ---
 
@@ -35,7 +35,6 @@ $ make cli
 ---
 
 ## Como utilizar:
-<br>
 
 ### API
 
@@ -70,7 +69,7 @@ Está API trabalha com cinco rotas diferentes sendo elas:
 * /covid = retorna dados sobre o covid em SP
 * /finance = retorna dados sobre as ações da B3 
 
-Voce pode testa-las usando o seu browser ou softwares dedicados como o Postman ou o Insomnia.
+Você pode testa-las usando o seu browser ou softwares dedicados como o Postman ou o Insomnia.
 <br>
 É importante afirmar que o formato de retorno sempre vão ser em .JSON
   
@@ -90,7 +89,7 @@ Bom o primeiro passo deste projeto foi encontrar alguma forma construir um servi
 
 ![image](https://user-images.githubusercontent.com/87132928/155896050-eff80eaf-932f-475c-9e8f-26cf15ee5bb3.png)
 
-A partir disso comecei a explorar algumas funcionalidades do Mongoose, dentro da função fn (manipulador de eventos) fiz a implementação que toda vez que for recebido uma mensagem da requisição a função compara à mesma a alguma rota já estabelecida e a partir disso retorna a mensagem em formato .JSON dependendo da rota escolhida. Após isso ele ainda escreve uma mensagem de log em um arquivo, o resultado ficou assim :
+A partir disso comecei a explorar algumas funcionalidades do Mongoose, dentro da função fn (manipulador de eventos) fiz a implementação que toda vez que for recebido a mensagem  a função compara à mesma a alguma rota já estabelecida e a partir disso retorna a mensagem em formato .JSON dependendo da rota escolhida. Após isso ele ainda escreve uma mensagem de log em um arquivo, o resultado ficou assim :
 
 <br>
 
@@ -113,7 +112,7 @@ O Mangoose também não dispõe de alguma ferramenta fácil de cadastro de log, 
 
 <br>
 
-E com isso a API vai estar pronta para receber requisições e armazenar os logs. Agora a próxima tarefa é fazer uma aplicação que consome os dados do log e o organizam em uma tabela, e pára fazer isso é necessárioo uso da get_next_line (função consegue ler toda uma linha de um arquivo) até o final do arquivo de log, e quando o CLI achar na linha o método da requisição e a rota correspondende (ex: ""GET /weather") conta +1 em um contador, assim conseguindo o valor da quantidade de requisições feitas para cada rota.
+E com isso a API vai estar pronta para receber requisições e armazenar os logs. Agora a próxima tarefa é fazer uma aplicação que consome os dados do log e o organizam em uma tabela, e para fazer isso é necessário uso da get_next_line (função consegue ler toda uma linha de um arquivo) até o final do arquivo de log, e quando a função  achar na linha o método da requisição e a rota correspondende (ex: ""GET /weather") conta +1 em um contador, assim conseguindo o valor da quantidade de requisições feitas para cada rota.
 
 <br>
 
