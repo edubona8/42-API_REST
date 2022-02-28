@@ -90,7 +90,7 @@ Bom o primeiro passo deste projeto foi encontrar alguma forma construir um servi
 
 ![image](https://user-images.githubusercontent.com/87132928/155896050-eff80eaf-932f-475c-9e8f-26cf15ee5bb3.png)
 
-A partir disso comecei a explorar algumas funcionalidades do Mongoose, dentro da função fn (manipulador de eventos) disse que toda vez que for recebido uma mensagem da requisição a função compara à mesma a alguma rota já estabelecida e a partir disso retorna a mensagem em formato .JSON dependendo da rota escolhida. Após isso ele ainda escreve uma mensagem de log em um arquivo, o resultado ficou assim :
+A partir disso comecei a explorar algumas funcionalidades do Mongoose, dentro da função fn (manipulador de eventos) fiz a implementação que toda vez que for recebido uma mensagem da requisição a função compara à mesma a alguma rota já estabelecida e a partir disso retorna a mensagem em formato .JSON dependendo da rota escolhida. Após isso ele ainda escreve uma mensagem de log em um arquivo, o resultado ficou assim :
 
 <br>
 
@@ -133,5 +133,8 @@ Passando por todos esses pontos o projeto vai estar finalizado.
 * What is a REST API? = https://www.youtube.com/watch?v=lsMQRaeKNDk.
 * Introdução a APIs (Rods Cadete da 42 :p ) = https://www.youtube.com/watch?v=kEVUfzIRkFI.
 * vnazioze | Vinicius e ldatilio | Lucas que me ajudaram demais no projeto.
+* Documentação da API de finanças = https://hgbrasil.com/status/finance
+* Documentação da API de dados sobre covid = https://covid19-brazil-api-docs.vercel.app/
+* Documentação da API de notícias tech = https://newsapi.org/docs
+* Documentação da API de tempo = https://hgbrasil.com/status/weather
  
-
