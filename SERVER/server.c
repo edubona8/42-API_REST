@@ -35,36 +35,36 @@ static void	fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data)
 		if (mg_http_match_uri(hm, "/")) //compara a mensagem recebida com a rota
 		{
 			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "{\"result\": \"Bem vindo a 42LabsNEWS selecione um tópico!\"}");
-			log_message ("LOG.log", hm->method.ptr, 200);
+			log_message ("server.log", hm->method.ptr, 200);
 		}
 		else if (mg_http_match_uri(hm, "/weather")) 
 		{
 			msg = get_api(1); //obtem o conteudo da API externa que foi requesitada
 			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", msg); //retorna a mensagem para o cliente em . JSON
-			log_message ("LOG.log", hm->method.ptr, 200); //escreve a mensagem de LOG
+			log_message ("server.log", hm->method.ptr, 200); //escreve a mensagem de LOG
 		}
 		else if (mg_http_match_uri(hm, "/covid"))
 		{
 			msg = get_api(2);
 			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", msg);
-			log_message ("LOG.log", hm->method.ptr, 200);
+			log_message ("server.log", hm->method.ptr, 200);
 		}
 		else if (mg_http_match_uri(hm, "/finance"))
 		{
 			msg = get_api(3);
 			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", msg);
-			log_message ("LOG.log", hm->method.ptr, 200);
+			log_message ("server.log", hm->method.ptr, 200);
 		}
 		else if (mg_http_match_uri(hm, "/tech"))
 		{
 			msg = get_api(4);
 			mg_http_reply(c, 200, "Content-Type: application/json\r\n", "%s", msg);
-			log_message ("LOG.log", hm->method.ptr, 200);
+			log_message ("server.log", hm->method.ptr, 200);
 		}
 		else
 		{
 			mg_http_reply(c, 404, "Content-Type: application/json\r\n", "{\"result\": \"Página não encontrada\"}");
-			log_message ("LOG.log", hm->method.ptr, 404);
+			log_message ("server.log", hm->method.ptr, 404);
 		}
 	}
 }

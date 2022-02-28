@@ -11,7 +11,7 @@ int main()
     char    *tmp_line;
     
     init_values(&requests);
-    fd = open("LOG.log", O_RDONLY);
+    fd = open("server.log", O_RDONLY);
     if (fd == -1)
 		printf("Error.");
     while (1)
