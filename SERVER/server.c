@@ -74,10 +74,10 @@ int	main(int argc, char *argv[])
 	struct mg_mgr	mgr;
 
 	mg_log_set("4");
-	mg_mgr_init(&mgr);// Iniciar gerenciador
+	mg_mgr_init(&mgr);// Inicia o  gerenciador
 	mg_http_listen(&mgr, LOCAL_ROST, fn, &mgr);// Configura o ouvinte HTTP
 	for (;;) mg_mgr_poll (&mgr, 1000); /** itera sobre todas as conexões, aceita novas conexões, envia e recebe dados, fecha conexões e 
 									   chama funções de manipulador de eventos para os respectivos eventos. */
-	mg_mgr_free(&mgr);// Free nas struct
+	mg_mgr_free(&mgr);// Free na struct
 	return (0);
 }
