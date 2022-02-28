@@ -35,7 +35,6 @@ $ make cli
 ---
 
 ## Como utilizar:
-<br>
 
 ### API
 
@@ -70,7 +69,7 @@ Está API trabalha com cinco rotas diferentes sendo elas:
 * /covid = retorna dados sobre o covid em SP
 * /finance = retorna dados sobre as ações da B3 
 
-Voce pode testa-las usando o seu browser ou softwares dedicados como o Postman ou o Insomnia.
+Você pode testa-las usando o seu browser ou softwares dedicados como o Postman ou o Insomnia.
 <br>
 É importante afirmar que o formato de retorno sempre vão ser em .JSON
   
