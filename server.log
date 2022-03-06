@@ -501,3 +501,94 @@ Host: localhost:8000
 User-Agent: insomnia/2021.7.2
 Accept: */*
 
+Status: 200
+Ultima requisição: Sun Mar  6 16:25:04 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 16:59:56 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 17:01:17 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 17:05:05 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: curl/7.68.0
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 17:05:49 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: curl/7.68.0
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 17:12:39 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 17:16:11 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 17:17:15 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 17:18:19 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 17:20:14 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 17:21:15 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 17:21:39 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+
+Status: 200
+Ultima requisição: Sun Mar  6 17:21:41 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+

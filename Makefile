@@ -42,7 +42,7 @@ $(NAME_CLI): $(OBJS_CLI)
 server: $(NAME_SERVER)
 
 $(NAME_SERVER): $(OBJS_SERVER)
-	gcc $(OBJS_SERVER) -lcurl -o $(NAME_SERVER)
+	gcc $(OBJS_SERVER) -lcurl -lsqlite3 -ljson-c -o $(NAME_SERVER)
 	@echo "$(GREEN)"
 	@echo "██╗ ██╗ ██████╗ ██╗       ███╗   ██████╗  ██████╗ "
 	@echo "██║ ██║     ██║ ██║      █████╗  ██   ██╗ ██╔═══╝ "

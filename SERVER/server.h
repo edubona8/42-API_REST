@@ -7,6 +7,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <curl/curl.h>
+#include <sqlite3.h>
+#include<json-c/json.h>
 
 #define COVID_URL	"https://covid19-brazil-api.vercel.app/api/report/v1/brazil/uf/sp"
 #define	TECH_URL	"https://newsapi.org/v2/everything?q=tecnologia&sortBy=publishedAt&apiKey=82c35576d3cc448986574b64a3753ea7"
