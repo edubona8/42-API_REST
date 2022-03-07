@@ -592,3 +592,10 @@ Host: localhost:8000
 User-Agent: insomnia/2021.7.2
 Accept: */*
 
+Status: 200
+Ultima requisição: Sun Mar  6 19:31:00 2022
+GET /covid HTTP/1.1
+Host: localhost:8000
+User-Agent: insomnia/2021.7.2
+Accept: */*
+

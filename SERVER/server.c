@@ -132,15 +132,6 @@ int	open_db(const char *datetime, const char *cases, const char *deaths)
    /* Execute SQL statement */
    rc = sqlite3_exec(db, sql, NULL, 0, &zErrMsg);
 
-    sql2 = "CREATE TABLE DATA_COVID("  \
-      "ID INTEGER PRIMARY KEY 	AUTOINCREMENT," \
-      "DATETIME	TEXT	NOT NULL," \
-      "CASES	TEXT	NOT NULL," \
-      "DEATHS	TEXT	NOT NULL );";
-
-   /* Execute SQL statement */
-   rc = sqlite3_exec(db, sql2, NULL, 0, &zErrMsg);
-   
    if( rc != SQLITE_OK ){
       fprintf(stderr, "SQL error: %s\n", zErrMsg);
       sqlite3_free(zErrMsg);
